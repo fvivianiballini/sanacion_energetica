@@ -1,0 +1,30 @@
+@import "maps";
+@import "mediaqueries";
+
+.footer{
+    font-size: 1em;
+    text-decoration: none;
+    color: map-get($estilos, color-fuente);
+    margin-top: 50px;
+    text-decoration: none;
+    background-image: none;
+    .footer_links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+    a{
+            img{
+            width: 20px;
+            height: 20px;
+            margin: 3px;
+        }
+    }
+}
+
+.footer__parrafo {
+    font-family: map-get($estilos, fuente);
+    display: flex;
+    justify-content: center;
+    margin: 1px;
+}

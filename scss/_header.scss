@@ -1,0 +1,42 @@
+@import "maps";
+
+.header {
+    background-color: $rosa_claro;
+    color: map-get($estilos, color-fuente);
+    font-family: map-get($estilos, fuente);
+    
+    .header__logo{
+        text-decoration: none;
+        background-image: none;
+        }
+    .header__lista{
+        @extend .header__logo;
+        list-style-type: none;
+        font-size: 2.6vh;
+        background-color: map-get($estilos, color-fondo);
+        padding: 0;
+        }
+}
+
+nav {
+    a{
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, #E1A730);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;  
+        &:link{
+            text-decoration: none; 
+            color: map-get($estilos, color-fuente);
+    }
+        &:visited {
+            text-decoration: none;
+            color: map-get($estilos, color-fuente);
+        }
+        &:hover {
+            background-size: 100% 2px;
+            font-weight: bold;
+        }
+    }
+}

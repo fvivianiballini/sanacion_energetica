@@ -1,0 +1,12 @@
+@import "variables";
+
+$estilos: (
+    color-fuente:  $azul_fuente,
+    fuente: $fuente,
+    color-fondo: $rosa_claro,
+);
+
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+}

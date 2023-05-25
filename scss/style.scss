@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import "header";
+@import "footer";
+@import "maps";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    overflow-x: hidden;
+    background-color: $rosa_claro;
+    
+}
+
+.btn-outline-dark{
+    margin-bottom: 30px;
+    &:hover {
+    background-color: $azul_fuente;
+    }
+}
+
+.parallax {
+    background-image: url(../images/2888688.jpg);
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 30px;
+	margin-bottom:50px;
+    font-size: 1.8rem;
+    color: map-get($estilos, color-fuente );
+        .inicio{
+            background-color: rgba(252, 228, 222, 0.7);
+            font-family: $fuente;
+        }
+        h1{
+            font-style: italic;
+        }
+    }
+    
+
+.section__aboutus {
+    background-image: url(../images/2888688.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        padding-bottom: 15vh;
+        padding-top: 15vh;
+    img {
+        @include sizes(350px, 350px);
+        border-radius: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p {
+        font-family: 'Libre Baskerville', serif;
+        color: $azul_fuente;
+        font-size: 3.5vh;
+        font-style: italic;
+    }
+}
+
+.terapias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Libre Baskerville', serif;
+    color: $azul_fuente;
+    img {
+        height: 450px;
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        justify-content: center;
+        
+    }    
+}
+.album {
+    background-image: url(../images/2888688.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    background-color: rgba(252, 228, 222, 0.7);
+    font-family: 'Libre Baskerville', serif;
+    color: $azul_fuente;
+}
+
+.card-text {
+    font-size: 2.8vh;
+}
+
+
+
+.form {
+    background-image: url(../images/2888688.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Libre Baskerville', serif;
+    color: $azul_fuente;
+    font-weight: bolder;
+}
+
+@import "mediaqueries";
+
